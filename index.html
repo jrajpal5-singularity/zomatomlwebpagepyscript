@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="style.css">
     <title>zomato predictor for cost of two</title>
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
@@ -13,13 +13,30 @@
     </py-env> -->
 </head>
 <body>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">One star Hotel</a>
+          <a href="#">Two star Hotel</a>
+          <a href="#">Three star Hotel</a>
+          <a href="#">Four star Hotel</a>
+          <a href="#">Five star Hotel</a>
+          
+        </div>
+      </div>
+
+
+
+      <br>
+
+
     <py-config>
         packages = ["joblib","scikit-learn"]
         [[fetch]]
         files = ["./zomatolrjoblib.pkl"]
 
     </py-config>
-    <py-script>
+    <py-script class="pyscript">
         import joblib
         import warnings
         warnings.filterwarnings("ignore")
